@@ -1,6 +1,9 @@
 <h1>Przydatne skrypty</h1>
 <h2> Sprawdzanie wysokośći elementu</h2
-<pre>function getHeight() {
+<pre>
+    ref="calendar"
+    <br/>
+    function getHeight() {
     const currentHeight = calendar.value?.$el.clientHeight;
     calendarStore.setCalendarHeight(currentHeight);
 }
