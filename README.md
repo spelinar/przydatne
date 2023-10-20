@@ -29,8 +29,8 @@ const loadMoreOnScrollEnd = (event: Event) => {
 <h2> Skrypt do Vuetify composition api(helpers)</h2
 <pre>
 import {getCurrentInstance} from 'vue';
-export const useVuetify = () => {    
-    const vm = getCurrentInstance();
-    return vm?.proxy?.$vuetify || null;
+export const useVuetify = () => {    <br/>
+    const vm = getCurrentInstance();<br/>
+    return vm?.proxy?.$vuetify || null;<br/>
 };
 </pre>
