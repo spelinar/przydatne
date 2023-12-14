@@ -43,3 +43,7 @@ const height = computed(() => {
     return vuetify?.breakpoint.height;
 })
 ```
+Enter your API in `config.js`
+   ```js
+   const API_KEY = 'ENTER YOUR API';
+   ```
