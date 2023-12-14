@@ -38,7 +38,7 @@ export const useVuetify = () => {    <br/>
 
 <h2>Wysokość konteneru</h2>
 <p>Musimy owinąć w v-row i w v-rowie dodać :style="height: height + 'px'"</p>
-```
+```js
 const height = computed(() => {
     return vuetify?.breakpoint.height;
 })
