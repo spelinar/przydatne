@@ -34,3 +34,10 @@ export const useVuetify = () => {    <br/>
     return vm?.proxy?.$vuetify || null;<br/>
 };
 </pre>
+
+
+<h2>Wysokość konteneru</h2>
+Musimy owinąć w v-row i w v-rowie dodać :style="height: height + 'px'"
+const height = computed(() => {
+    return vuetify?.breakpoint.height;
+})
