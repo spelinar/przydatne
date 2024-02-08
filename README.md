@@ -3,9 +3,9 @@
 ```js
     ref="calendar"
     function getHeight() {
-    const currentHeight = calendar.value?.$el.clientHeight;
-    calendarStore.setCalendarHeight(currentHeight);
-    window.addEventListener("resize", getHeight);
+    const currentHeight = calendarRef.value?.clientHeight;
+    calendarStore.setCalendarHeight(currentHeight); -> zapis do storege aby można było użyć w innych komponentach
+    window.addEventListener("resize", getHeight); -> służy do zmiany dynamicznej rozmiaru
 }
 ```
 ## Reagowanie na koniec skrolu
