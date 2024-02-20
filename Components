@@ -1,0 +1,52 @@
+## QrCode generator yarn add qrcode.vue
+```js
+<template>
+  <qrcode-vue :value="value" :level="level" :render-as="renderAs" />
+</template>
+<script setup lang="ts">
+  import { ref } from 'vue'
+  import QrcodeVue, { Level, RenderAs } from 'qrcode.vue'
+
+  const value = ref('qrcode')
+  const level = ref<Level>('M')
+  const renderAs = ref<RenderAs>('svg')
+</script>
+```
+value
+Type: string
+Default: ''
+The value content of qrcode.
+
+size
+Type: number
+Default: 100
+The size of qrcode element.
+
+render-as
+Type: RenderAs('canvas' | 'svg')
+Default: canvas
+Generate QRcode as canvas or svg. The prop svg can work on SSR.
+
+margin
+Type: number
+Default: 0
+Define how much wide the quiet zone should be.
+
+level
+Type: Level('L' | 'M' | 'Q' | 'H')
+Default: L
+qrcode Error correction level (one of 'L', 'M', 'Q', 'H'). Know more, wikipedia: QR_code.
+
+background
+Type: string
+Default: #ffffff
+The background color of qrcode.
+
+foreground
+Type: string
+Default: #000000
+The foreground color of qrcode.
+
+class
+Type: string
+Default: ''
