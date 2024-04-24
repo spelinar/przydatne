@@ -1,0 +1,40 @@
+#Flagi
+i - nie jest uwzględniana wielkość liter
+g - wyszukiwanie globalne bez nie wyszuka tylko pierwsze dopasowanie
+m - multi wyszukiwanie. 
+
+#Metody
+match -> str.match(regexp)
+test -> zwraca wartość logiczną
+replace -> srt.replace('co szukamy', 'na co zamieniamy')
+
+#Literowe klasy
+\d -> dowolna liczba
+\w -> dowolna litera
+\s -> spacja
+\b -> granica (/\bJava\b/) - wyszuka w str
+\D -> wszsytko oprócz \d
+\W -> wszsytko oprócz \w
+\S -> wszsytko oprócz \s
+. -> wszsytko oprocz \n.
+
+#Kotwicy
+^ -> początek str
+$ -> koniec str
+ZWRACA WARTOŚĆ LOGICZNĄ
+
+#Zakresy
+[0-9] -> liczby od 0 do 9
+[A-Z] -> duże litery
+[a-z] -> małe litery
+[^0-9] -> ^ zaprzeczenie czyli wszsytko tylko nie [0-9]
+
+#Quantyfikatory
+{n} -> dokładna ilość znaków (/\d{2}/.test(12)) zwróci true
+{n1, n2} -> ot do czyli jesli jest (/\d{2,3}/.test(12) to znczy że znaków może być od 2 do 3 
+{n, } -> od 1 do nieskonczoności
+
+#Skróty quantyfikatorów
++ {1, n}
+? {0,1} -> od 0 do 1 i tylko jedna cyfra
+* od 0 i wyżej
